@@ -1,4 +1,4 @@
-pclass Student {
+public class Student {
     private String name;
     private double grade;
     public Student() {
