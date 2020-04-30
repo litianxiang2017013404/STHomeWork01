@@ -93,7 +93,7 @@ data = new ArrayList();
 }
 }
 }
-class Student {
+class StudentManager{
 private String id;
 private String name;
 private String sex;
