@@ -4,20 +4,20 @@ public class Student {
     public Student() {
     }
     public Student(String name, double grade) {
-        this.name = name;
+        this.name = name;                   //3//
         this.grade = grade;
     }
     public String getName() {
-        return name;
+        return name;                        //3//
     }
     public void setName(String name) {
-        this.name = name;
+        this.name = name;                   //3//
     }
     public double getGrade() {
-        return grade;
+        return grade;                       //3//
     }
     public void setGrade(double grade) {
-        this.grade = grade;
+        this.grade = grade;                 //3//
     }
 }
 

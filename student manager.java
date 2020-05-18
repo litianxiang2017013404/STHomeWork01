@@ -13,15 +13,15 @@ System.out.print("添加学生,请输入3 ");
 System.out.print("删除学生,请输入4 ");
 System.out.println("退出,请输入5");
 int i = in.nextInt();
-if (i == 1) {
+if (i == 1) {			//3//
 list();
-} else if (i == 2) {
+} else if (i == 2) {	//4//
 find();
-} else if (i == 3) {
+} else if (i == 3) {	//4//
 add();
-} else if (i == 4) {
+} else if (i == 4) {	//4//
 del();
-} else if (i == 5) {
+} else if (i == 5) {	//4//
 System.out.println("您已退出系统!");
 System.exit(0);
 }
@@ -32,10 +32,10 @@ private static void del() {
 Scanner in = new Scanner(System.in);
 System.out.print("输入学号:");
 String id = in.next();
-boolean flg = false;
-for (int i = 0; i < data.size(); i++) {
+boolean flg = false;		//3//
+for (int i = 0; i < data.size(); i++) {		//4//
 Student s = (Student) data.get(i);
-if (s.getId().equalsIgnoreCase(id)) {
+if (s.getId().equalsIgnoreCase(id)) {		//4//
 data.remove(i);
 flg = true;
 }
@@ -59,31 +59,31 @@ s.setSex(sex);
 data.add(s);
 }
 private static void find() {
-Scanner in = new Scanner(System.in);
+Scanner in = new Scanner(System.in);		//3//
 System.out.print("输入关键字:");
 String key = in.next();
-for (int i = 0; i < data.size(); i++) {
+for (int i = 0; i < data.size(); i++) {		//4//
 Student s = (Student) data.get(i);
-if (s.getId().equalsIgnoreCase(key)) {
+if (s.getId().equalsIgnoreCase(key)) {		//4//
 System.out.println(s);
 break;
 }
-if (s.getName().equalsIgnoreCase(key)) {
+if (s.getName().equalsIgnoreCase(key)) {	//4//
 System.out.println(s);
 break;
 }
-if (s.getSex().equalsIgnoreCase(key)) {
+if (s.getSex().equalsIgnoreCase(key)) {		//4//
 System.out.println(s);
 break;
 }
 }
 }
 private static void list() {
-if (data == null || data.size() == 0) {
+if (data == null || data.size() == 0) {		//5//
 System.out.println("当前没有数据!");
 return;
 }
-for (int i = 0; i < data.size(); i++) {
+for (int i = 0; i < data.size(); i++) {		//4//
 System.out.println(data.get(i));
 }
 }
